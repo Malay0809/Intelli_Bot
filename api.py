@@ -1,3 +1,15 @@
+"""
+Returns the current date in the format "YYYY-MM-DD".
+"""
+"""
+Provides a Flask API with three endpoints to retrieve the current date, day, and time.
+
+The `get_current_date()` function returns the current date in the format "YYYY-MM-DD".
+
+The `get_current_day()` function returns the current day of the week as a string (e.g. "Monday", "Tuesday", etc.).
+
+The `get_current_time()` function returns the current time in the format "HH:MM:SS".
+"""
 from flask import Flask, jsonify
 from datetime import datetime
 
@@ -23,4 +35,4 @@ def get_current_time():
 
 
 if __name__ == "__main__":
-    date.run()
+    date.run(port=5000)
